@@ -1,0 +1,19 @@
+{
+  "namespace" : "io.confluent.examples.fraud",
+  "type" : "record",
+  "name" : "UserProfile",
+  "fields" : [
+    {"name" : "userId", "type" : "string"},
+    {"name" : "lastUpdatedTimeStamp", "type" : "long"},
+    {"name" : "last100VendorId", "type" : {
+      "name" : "last100VendorType", "type" : "map", "values" : "long" }},
+    {"name" : "currMonthSumSingleDaySpend", "type" : "double"},
+    {"name" : "currMonthCountSingleDayPurchases", "type" : "double"},
+    {"name" : "currMonthSumSqSingleDaySpend", "type" : "double"},
+    {"name" : "lastMonthSumSingleDaySpend", "type" : "double"},
+    {"name" : "lastMonthCountSingleDaySpend", "type" : "double"},
+    {"name" : "lastMonthSumSqSingleDaySpend", "type" : "double"},
+    {"name" : "todayTotalSpend", "type" : "double"},
+    {"name" : "todayCountSpend", "type" : "double"},
+    {"name" : "todaySumSqSpend", "type" : "double"}
+  ]}

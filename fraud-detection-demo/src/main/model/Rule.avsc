@@ -1,0 +1,10 @@
+{
+  "namespace" : "io.confluent.examples.fraud",
+  "type" : "record",
+  "name" : "Rule",
+  "fields" : [
+    {"name" : "bannedVendorIds", "type" : {
+      "name" : "bannedVendorsType", "type" : "array", "items" : "string"}},
+    {"name" : "thresholdDifferenceInTodaySpend", "type" : "double"},
+    {"name" : "thresholdDifferenceInSinglePurchase", "type" : "double"}
+  ]}

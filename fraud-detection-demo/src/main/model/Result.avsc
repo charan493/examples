@@ -1,0 +1,11 @@
+{
+  "namespace" : "io.confluent.examples.fraud",
+  "type" : "record",
+  "name" : "Result",
+  "fields" : [
+    {"name" : "eventId", "type" : "string"},
+    {"name" : "userId", "type" : "string"},
+    {"name" : "status", "type" : {
+      "name" : "status_codes", "type" : "enum", "symbols" : ["ACCEPT", "DENY"]}},
+    {"name" : "reason", "type" : "double"}
+  ]}

@@ -1,0 +1,16 @@
+{
+  "namespace" : "io.confluent.examples.fraud",
+  "type" : "record",
+  "name" : "UserEvent",
+  "fields" : [
+    {"name" : "eventId", "type" : "string"},
+    {"name" : "userId", "type" : "string"},
+    {"name" : "timeStamp", "type" : "long"},
+    {"name" : "ipAddress", "type" : "string"},
+    {"name" : "countryCode", "type" : "string"},
+    {"name" : "zipCode", "type" : "string"},
+    {"name" : "itemCategory", "type" : "string"},
+    {"name" : "paymentAmount", "type" : "double"},
+    {"name" : "vendorId", "type" : "string"},
+    {"name" : "isCardPresent", "type" : "boolean"}
+  ]}
